@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Operation from './Operation';
-import Chat from './Chat';
+//import Chat from './Chat';
+import Chat2 from './Chat2';
 
 const App = () => {
   const [entered, setEntered] = useState(false);
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <div>
       <Operation onEnter={handleEnter} onLeave={handleLeave} entered={entered} />
-      { entered && <Chat name={name} />}
+      { entered && <Chat2 name={name} />}
     </div>
   );
 }
