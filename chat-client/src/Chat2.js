@@ -26,9 +26,9 @@ const Chat2 = ({name}) => {
             </div>
             <ul>
                 {
-                    messages.map(msg => {
+                    messages.map((msg, idx) => {
                         return (
-                            <Message name={msg.name} text={msg.text} />
+                            <Message key={idx} name={msg.name} text={msg.text} />
                         );
                     })
                 }
